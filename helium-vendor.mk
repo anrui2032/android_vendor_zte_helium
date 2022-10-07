@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/zte/helium/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/zte/helium/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
-    vendor/zte/helium/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/zte/helium/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/zte/helium/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/zte/helium/proprietary/vendor/bin/camerahalvs:$(TARGET_COPY_OUT_VENDOR)/bin/camerahalvs \
@@ -332,7 +331,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit-90hz.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit-90hz.xml \
     vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit.xml \
     vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch.xml \
-    vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
@@ -1260,7 +1258,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
     vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/zte/helium/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
