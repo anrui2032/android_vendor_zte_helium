@@ -389,7 +389,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    com.qualcomm.qti.dpm.api@1.0 \
+    com.qualcomm.qti.dpm.api@1.0_vendor \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
