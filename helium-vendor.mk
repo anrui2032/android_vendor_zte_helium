@@ -594,7 +594,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     libOmxDsdDec \
-    libOmxVideoDSMode \
     libadm \
     libadpcmdec \
     libcppf \
