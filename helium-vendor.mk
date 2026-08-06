@@ -91,6 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/zte/helium/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/zte/helium/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/zte/helium/proprietary/vendor/bin/camerahalvs:$(TARGET_COPY_OUT_VENDOR)/bin/camerahalvs \
     vendor/zte/helium/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/zte/helium/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/zte/helium/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
@@ -172,6 +173,11 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd \
     vendor/zte/helium/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/zte/helium/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/zte/helium/proprietary/vendor/etc/camera/VfbTuningInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VfbTuningInterface.xml \
+    vendor/zte/helium/proprietary/vendor/etc/camera/beautiful_app/preference_beautify0.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify0.json \
+    vendor/zte/helium/proprietary/vendor/etc/camera/beautiful_app/preference_beautify1.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify1.json \
+    vendor/zte/helium/proprietary/vendor/etc/camera/beautiful_app/preference_beautify2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify2.json \
+    vendor/zte/helium/proprietary/vendor/etc/camera/beautiful_fn/fn_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_default.xml \
     vendor/zte/helium/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/zte/helium/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/zte/helium/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -213,6 +219,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
+    vendor/zte/helium/proprietary/vendor/etc/init/camerahalvs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalvs.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -491,16 +498,24 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
     vendor/zte/helium/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/zte/helium/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxdefog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxdefog.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxeffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxeffect.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfacialfeatures.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgo.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxifestriping.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamximageformatutils.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxmirror.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxmirror.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxncs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxncs.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxportraitbokehwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxportraitbokehwrap.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxselfiebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxselfiebokeh.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxskinbeautiful.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxskinbeautiful.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
     vendor/zte/helium/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxwatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxwatermark.so \
+    vendor/zte/helium/proprietary/vendor/lib/libcamxwidelencalc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxwidelencalc.so \
     vendor/zte/helium/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/zte/helium/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
     vendor/zte/helium/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
@@ -801,6 +816,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/zte/helium/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/zte/helium/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFNVfbEngineHAL.so \
     vendor/zte/helium/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/zte/helium/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/zte/helium/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
@@ -826,9 +842,11 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/zte/helium/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/zte/helium/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libSEC.HybridHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSEC.HybridHDR.so \
     vendor/zte/helium/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/zte/helium/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
     vendor/zte/helium/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libZEffectLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libZEffectLib.so \
     vendor/zte/helium/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
     vendor/zte/helium/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/zte/helium/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
@@ -851,16 +869,24 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxdefog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxdefog.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxeffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxeffect.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxmirror.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxmirror.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxncs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxncs.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxportraitbokehwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxportraitbokehwrap.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxselfiebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxselfiebokeh.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxskinbeautiful.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxskinbeautiful.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxwatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxwatermark.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libcamxwidelencalc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxwidelencalc.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svarnn.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
@@ -869,6 +895,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/zte/helium/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libchvs-bc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchvs-bc.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libchvs-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchvs-util.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/zte/helium/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
@@ -895,6 +923,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/zte/helium/proprietary/vendor/lib64/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexthwplugin.so \
     vendor/zte/helium/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libfnxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfnxml.so \
     vendor/zte/helium/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/zte/helium/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
     vendor/zte/helium/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
@@ -919,6 +948,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp.so \
     vendor/zte/helium/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/zte/helium/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libimage_segment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_segment.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libimage_split.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_split.so \
     vendor/zte/helium/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/zte/helium/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/zte/helium/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
@@ -972,6 +1003,9 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/zte/helium/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/zte/helium/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libportrait_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libportrait_bokeh.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercallback.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
@@ -1031,6 +1065,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/zte/helium/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/zte/helium/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libskia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskia.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libskia_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskia_watermark.so \
     vendor/zte/helium/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/zte/helium/proprietary/vendor/lib64/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndmonitor.so \
     vendor/zte/helium/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
@@ -1049,11 +1085,14 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/zte/helium/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/zte/helium/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libtensorflowlite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtensorflowlite.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libtensorflowlite_gpu_delegate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtensorflowlite_gpu_delegate.so \
     vendor/zte/helium/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/zte/helium/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/zte/helium/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/zte/helium/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/zte/helium/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libtsvideoprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtsvideoprocess.so \
     vendor/zte/helium/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/zte/helium/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/zte/helium/proprietary/vendor/lib64/libvendorutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendorutils.so \
@@ -1062,7 +1101,11 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/zte/helium/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/zte/helium/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libwa_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_depth.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libwa_dualcam_ancbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_dualcam_ancbase.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libwa_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_refocus.so \
     vendor/zte/helium/proprietary/vendor/lib64/libwa_rtdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_rtdof.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libwa_widelens_undistort.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_widelens_undistort.so \
     vendor/zte/helium/proprietary/vendor/lib64/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfddisplayconfig_proprietary.so \
     vendor/zte/helium/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/zte/helium/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
@@ -1070,6 +1113,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/zte/helium/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/zte/helium/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libzte_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzte_enhance.so \
     vendor/zte/helium/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/zte/helium/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/zte/helium/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
