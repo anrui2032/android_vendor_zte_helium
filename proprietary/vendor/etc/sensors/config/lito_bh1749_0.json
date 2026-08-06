@@ -1,0 +1,378 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK"],
+    "soc_id": ["400"]
+  },
+    "bh1749_0":{
+    "owner": "sns_bh1749",
+    ".ambient_light":{
+      "owner": "sns_bh1749",
+      ".config":{
+        "owner": "sns_bh1749",
+        "is_dri":{ "type": "int", "ver": "1",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "1",
+          "data": "0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_bh1749",
+      ".config":{
+        "owner": "sns_bh1749",
+        "is_dri":{ "type": "int", "ver": "1",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "1",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "bh1749_0_platform":{
+    "owner": "sns_bh1749",
+    ".config":{
+      "owner": "sns_bh1749",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "slave_config":{ "type": "int", "ver": "1",
+        "data": "56"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "2",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".ambient_light":{
+      "owner": "sns_bh1749",
+      ".fac_cal":{
+        "owner": "sns_bh1749",
+        "lux_scale":{"type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "r_scale":{"type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "g_scale":{"type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "b_scale":{"type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "c_scale":{"type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".cal_reference_value":{
+        "owner": "sns_bh1749",
+        "lux_ref":{"type": "flt", "ver": "0",
+          "data": "11000.0"
+        },
+        "r_ref":{"type": "flt", "ver": "0",
+          "data": "18000.0"
+        },
+        "g_ref":{"type": "flt", "ver": "0",
+          "data": "25000.0"
+        },
+        "b_ref":{"type": "flt", "ver": "0",
+          "data": "10000.0"
+        },
+        "c_ref":{"type": "flt", "ver": "0",
+          "data": "3000.0"
+        }
+      },
+      ".coefficient_lux_0":{
+        "owner": "sns_bh1749",
+        "0_lkc_vendor0_white":{ "type": "flt", "ver": "1",
+          "data": "0.5"
+        },
+        "0_lc1":{ "type": "flt", "ver": "1",
+          "data": "-0.18573"
+        },
+        "0_lc2":{ "type": "flt", "ver": "1",
+          "data": "2.24643"
+        },
+        "0_lc3":{ "type": "flt", "ver": "1",
+          "data": "-0.37951"
+        },
+        "0_Lc4":{ "type": "flt", "ver": "1",
+          "data": "0.16116"
+        },
+        "0_Lc5":{ "type": "flt", "ver": "1",
+          "data": "2.07544"
+        },
+        "0_Lc6":{ "type": "flt", "ver": "1",
+          "data": "-0.79494"
+        },
+        "1_lkc_vendor0_black":{ "type": "flt", "ver": "1",
+          "data": "0.5"
+        },
+        "1_lc1":{ "type": "flt", "ver": "1",
+          "data": "-0.18573"
+        },
+        "1_lc2":{ "type": "flt", "ver": "1",
+          "data": "2.24643"
+        },
+        "1_lc3":{ "type": "flt", "ver": "1",
+          "data": "-0.37951"
+        },
+        "1_Lc4":{ "type": "flt", "ver": "1",
+          "data": "0.16116"
+        },
+        "1_Lc5":{ "type": "flt", "ver": "1",
+          "data": "2.07544"
+        },
+        "1_Lc6":{ "type": "flt", "ver": "1",
+          "data": "-0.79495"
+        }
+      },
+      ".coefficient_lux_1":{
+        "owner": "sns_bh1749",
+        "2_lkc_vendor1_white":{ "type": "flt", "ver": "1",
+          "data": "0.5"
+        },
+        "2_lc1":{ "type": "flt", "ver": "1",
+          "data": "-0.18573"
+        },
+        "2_lc2":{ "type": "flt", "ver": "1",
+          "data": "2.24643"
+        },
+        "2_lc3":{ "type": "flt", "ver": "1",
+          "data": "-0.37951"
+        },
+        "2_Lc4":{ "type": "flt", "ver": "1",
+          "data": "0.16116"
+        },
+        "2_Lc5":{ "type": "flt", "ver": "1",
+          "data": "2.07544"
+        },
+        "2_Lc6":{ "type": "flt", "ver": "1",
+          "data": "-0.79496"
+        },
+        "3_lkc_vendor1_black":{ "type": "flt", "ver": "1",
+          "data": "0.5"
+        },
+        "3_lc1":{ "type": "flt", "ver": "1",
+          "data": "-0.18573"
+        },
+        "3_lc2":{ "type": "flt", "ver": "1",
+          "data": "2.24643"
+        },
+        "3_lc3":{ "type": "flt", "ver": "1",
+          "data": "-0.37951"
+        },
+        "3_Lc4":{ "type": "flt", "ver": "1",
+          "data": "0.16116"
+        },
+        "3_Lc5":{ "type": "flt", "ver": "1",
+          "data": "2.07544"
+        },
+        "3_Lc6":{ "type": "flt", "ver": "1",
+          "data": "-0.79497"
+        }
+      },
+      ".coefficient_cct_0":{
+        "owner": "sns_bh1749",
+        "0_cct_c01_vendor0_white":{ "type": "flt", "ver": "1",
+          "data": "-0.18832"
+        },
+        "0_cct_c02":{ "type": "flt", "ver": "1",
+          "data": "-0.6804"
+        },
+        "0_cct_c03":{ "type": "flt", "ver": "1",
+          "data": "1.37826"
+        },
+        "0_cct_c04":{ "type": "flt", "ver": "1",
+          "data": "1.25834"
+        },
+        "0_cct_c05":{ "type": "flt", "ver": "1",
+          "data": "1.27362"
+        },
+        "0_cct_c06":{ "type": "flt", "ver": "1",
+          "data": "-0.71159"
+        },
+        "0_cct_c07":{ "type": "flt", "ver": "1",
+          "data": "-0.51176"
+        },
+        "0_cct_c08":{ "type": "flt", "ver": "1",
+          "data": "0.38007"
+        },
+        "0_cct_c09":{ "type": "flt", "ver": "1",
+          "data": "0.47308"
+        },
+        "0_cct_c10":{ "type": "flt", "ver": "1",
+          "data": "2.12118"
+        },
+        "0_cct_c11":{ "type": "flt", "ver": "1",
+          "data": "-0.2303"
+        },
+        "0_cct_c12":{ "type": "flt", "ver": "1",
+          "data": "-1.20040"
+        }
+      },
+      ".coefficient_cct_1":{
+        "owner": "sns_bh1749",
+        "1_cct_c01_vendor0_black":{ "type": "flt", "ver": "1",
+          "data": "-0.18832"
+        },
+        "1_cct_c02":{ "type": "flt", "ver": "1",
+          "data": "-0.6804"
+        },
+        "1_cct_c03":{ "type": "flt", "ver": "1",
+          "data": "1.37826"
+        },
+        "1_cct_c04":{ "type": "flt", "ver": "1",
+          "data": "1.25834"
+        },
+        "1_cct_c05":{ "type": "flt", "ver": "1",
+          "data": "1.27362"
+        },
+        "1_cct_c06":{ "type": "flt", "ver": "1",
+          "data": "-0.71159"
+        },
+        "1_cct_c07":{ "type": "flt", "ver": "1",
+          "data": "-0.51176"
+        },
+        "1_cct_c08":{ "type": "flt", "ver": "1",
+          "data": "0.38007"
+        },
+        "1_cct_c09":{ "type": "flt", "ver": "1",
+          "data": "0.47308"
+        },
+        "1_cct_c10":{ "type": "flt", "ver": "1",
+          "data": "2.12118"
+        },
+        "1_cct_c11":{ "type": "flt", "ver": "1",
+          "data": "-0.2303"
+        },
+        "1_cct_c12":{ "type": "flt", "ver": "1",
+          "data": "-1.20041"
+        }
+      },
+      ".coefficient_cct_2":{
+        "owner": "sns_bh1749",
+        "2_cct_c01_vendor1_white":{ "type": "flt", "ver": "1",
+          "data": "-0.18832"
+        },
+        "2_cct_c02":{ "type": "flt", "ver": "1",
+          "data": "-0.6804"
+        },
+        "2_cct_c03":{ "type": "flt", "ver": "1",
+          "data": "1.37826"
+        },
+        "2_cct_c04":{ "type": "flt", "ver": "1",
+          "data": "1.25834"
+        },
+        "2_cct_c05":{ "type": "flt", "ver": "1",
+          "data": "1.27362"
+        },
+        "2_cct_c06":{ "type": "flt", "ver": "1",
+          "data": "-0.71159"
+        },
+        "2_cct_c07":{ "type": "flt", "ver": "1",
+          "data": "-0.51176"
+        },
+        "2_cct_c08":{ "type": "flt", "ver": "1",
+          "data": "0.38007"
+        },
+        "2_cct_c09":{ "type": "flt", "ver": "1",
+          "data": "0.47308"
+        },
+        "2_cct_c10":{ "type": "flt", "ver": "1",
+          "data": "2.12118"
+        },
+        "2_cct_c11":{ "type": "flt", "ver": "1",
+          "data": "-0.2303"
+        },
+        "2_cct_c12":{ "type": "flt", "ver": "1",
+          "data": "-1.20042"
+        }
+      },
+      ".coefficient_cct_3":{
+        "owner": "sns_bh1749",
+        "3_cct_c01_vendor1_black":{ "type": "flt", "ver": "1",
+          "data": "-0.18832"
+        },
+        "3_cct_c02":{ "type": "flt", "ver": "1",
+          "data": "-0.6804"
+        },
+        "3_cct_c03":{ "type": "flt", "ver": "1",
+          "data": "1.37826"
+        },
+        "3_cct_c04":{ "type": "flt", "ver": "1",
+          "data": "1.25834"
+        },
+        "3_cct_c05":{ "type": "flt", "ver": "1",
+          "data": "1.27362"
+        },
+        "3_cct_c06":{ "type": "flt", "ver": "1",
+          "data": "-0.71159"
+        },
+        "3_cct_c07":{ "type": "flt", "ver": "1",
+          "data": "-0.51176"
+        },
+        "3_cct_c08":{ "type": "flt", "ver": "1",
+          "data": "0.38007"
+        },
+        "3_cct_c09":{ "type": "flt", "ver": "1",
+          "data": "0.47308"
+        },
+        "3_cct_c10":{ "type": "flt", "ver": "1",
+          "data": "2.12118"
+        },
+        "3_cct_c11":{ "type": "flt", "ver": "1",
+          "data": "-0.2303"
+        },
+        "3_cct_c12":{ "type": "flt", "ver": "1",
+          "data": "-1.20043"
+        }
+      }
+    },
+    ".touchpanel":{
+      "owner": "sns_bh1749",
+      "tp_vendor":{ "type": "str", "ver": "1",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "tp_color":{ "type": "str", "ver": "1",
+        "data": "/pmic/client/sensor_vddio"
+      }
+    }
+  }
+}
