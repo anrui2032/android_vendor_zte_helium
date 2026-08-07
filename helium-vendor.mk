@@ -272,6 +272,9 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/zte/helium/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/zte/helium/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
+    vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit-90hz.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit-90hz.xml \
+    vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit.xml \
+    vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch.xml \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
