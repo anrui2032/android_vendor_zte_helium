@@ -119,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/zte/helium/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/zte/helium/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
+    vendor/zte/helium/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
     vendor/zte/helium/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/zte/helium/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/zte/helium/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
@@ -213,6 +214,71 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/zte/helium/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/zte/helium/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_bt_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_bt_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_bt_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_bt_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_usb_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_usb_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_wh_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_wh_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_bt_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_bt_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_bt_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_bt_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_usb_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_usb_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_wh_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a12_wh_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_bt_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_bt_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_bt_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_bt_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_usb_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_usb_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_wh_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a13_wh_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_bt_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_bt_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_bt_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_bt_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_usb_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_usb_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_wh_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a14_wh_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_bt_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_bt_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_bt_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_bt_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_usb_44.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_usb_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_wh_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a15_wh_48.bin \
+    vendor/zte/helium/proprietary/vendor/etc/dts/beq48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/ctc:$(TARGET_COPY_OUT_VENDOR)/etc/dts/ctc \
+    vendor/zte/helium/proprietary/vendor/etc/dts/current_bluetooth44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth44k \
+    vendor/zte/helium/proprietary/vendor/etc/dts/current_bluetooth48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth48k \
+    vendor/zte/helium/proprietary/vendor/etc/dts/current_lineout48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_lineout48k \
+    vendor/zte/helium/proprietary/vendor/etc/dts/current_speaker48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_speaker48k \
+    vendor/zte/helium/proprietary/vendor/etc/dts/current_usb44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb44k \
+    vendor/zte/helium/proprietary/vendor/etc/dts/current_usb48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb48k \
+    vendor/zte/helium/proprietary/vendor/etc/dts/custom_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/custom_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/custom_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/custom_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/custom_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/custom_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/customer.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dts/customer.cfg \
+    vendor/zte/helium/proprietary/vendor/etc/dts/default_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/default_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/default_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/default_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/default_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/default_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/dts-eagle.lic:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts-eagle.lic \
+    vendor/zte/helium/proprietary/vendor/etc/dts/dts-m6m8-lic.key:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts-m6m8-lic.key \
+    vendor/zte/helium/proprietary/vendor/etc/dts/dts_audio_settings:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts_audio_settings \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game1_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game1_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game1_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game1_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game1_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game1_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game2_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game2_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game2_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game2_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game2_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game2_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game3_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game3_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game3_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game3_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/game3_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/game3_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/movie_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/movie_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/movie_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/music_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/music_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/music_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/off_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/off_speaker48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/offline_hptuning.db:$(TARGET_COPY_OUT_VENDOR)/etc/dts/offline_hptuning.db \
+    vendor/zte/helium/proprietary/vendor/etc/dts/voice_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/voice_accessory44 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/voice_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/voice_accessory48 \
+    vendor/zte/helium/proprietary/vendor/etc/dts/voice_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/voice_speaker48 \
     vendor/zte/helium/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -257,6 +323,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
@@ -276,6 +343,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch-10bit.xml \
     vendor/zte/helium/proprietary/vendor/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Visionox-RM692C9-1080-2460-6P9Inch.xml \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
+    vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
+    vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/zte/helium/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
@@ -400,6 +469,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/zte/helium/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/zte/helium/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/zte/helium/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/zte/helium/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/zte/helium/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/zte/helium/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
@@ -533,6 +603,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/zte/helium/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/zte/helium/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/zte/helium/proprietary/vendor/lib/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdts-eagle-shared.so \
+    vendor/zte/helium/proprietary/vendor/lib/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtsdsec.so \
     vendor/zte/helium/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
     vendor/zte/helium/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/zte/helium/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
@@ -571,6 +643,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/zte/helium/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
     vendor/zte/helium/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/zte/helium/proprietary/vendor/lib/libomx-dts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx-dts.so \
     vendor/zte/helium/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
     vendor/zte/helium/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/zte/helium/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
@@ -578,6 +651,12 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so \
     vendor/zte/helium/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/zte/helium/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
+    vendor/zte/helium/proprietary/vendor/lib/libqcodec2_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_base.so \
+    vendor/zte/helium/proprietary/vendor/lib/libqcodec2_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_basecodec.so \
+    vendor/zte/helium/proprietary/vendor/lib/libqcodec2_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_core.so \
+    vendor/zte/helium/proprietary/vendor/lib/libqcodec2_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_platform.so \
+    vendor/zte/helium/proprietary/vendor/lib/libqcodec2_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_utils.so \
+    vendor/zte/helium/proprietary/vendor/lib/libqcodec2_v4l2codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_v4l2codec.so \
     vendor/zte/helium/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/zte/helium/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/zte/helium/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
@@ -653,6 +732,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/zte/helium/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/zte/helium/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
+    vendor/zte/helium/proprietary/vendor/lib/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdtsaudio.so \
     vendor/zte/helium/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/zte/helium/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/zte/helium/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
@@ -927,6 +1007,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
     vendor/zte/helium/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/zte/helium/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdts-eagle-shared.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtsdsec.so \
     vendor/zte/helium/proprietary/vendor/lib64/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexthwplugin.so \
     vendor/zte/helium/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/zte/helium/proprietary/vendor/lib64/libfnxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfnxml.so \
@@ -1001,6 +1083,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
     vendor/zte/helium/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/zte/helium/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libomx-dts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libomx-dts.so \
     vendor/zte/helium/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/zte/helium/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/zte/helium/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
@@ -1016,6 +1099,12 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libqcodec2_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_base.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libqcodec2_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_basecodec.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libqcodec2_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_core.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libqcodec2_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_platform.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libqcodec2_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_utils.so \
+    vendor/zte/helium/proprietary/vendor/lib64/libqcodec2_v4l2codec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_v4l2codec.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/zte/helium/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
@@ -1126,6 +1215,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
     vendor/zte/helium/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/zte/helium/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/zte/helium/proprietary/vendor/lib64/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdtsaudio.so \
     vendor/zte/helium/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/zte/helium/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/zte/helium/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
@@ -1254,6 +1344,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
+    c2_manifest_vendor \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.display.composer-service
