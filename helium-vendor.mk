@@ -867,7 +867,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/lib64/hw/audio.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.lito.so \
     vendor/zte/helium/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/zte/helium/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/zte/helium/proprietary/vendor/lib64/hw/fingerprint.gf95xx.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.gf95xx.default.so \
+    vendor/zte/helium/proprietary/vendor/lib64/hw/fingerprint.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.lito.so \
     vendor/zte/helium/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/zte/helium/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/zte/helium/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
