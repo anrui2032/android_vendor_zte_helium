@@ -1009,6 +1009,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libFNVfbEngineHAL",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libFNVfbEngineHAL.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libEGL",
+                "libnativewindow",
+                "libGLESv3",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libFNVfbEngineHAL.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libEGL",
+                "libnativewindow",
+                "libGLESv3",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libI420colorconvert",
     owner: "zte",
     strip: {
@@ -1513,6 +1554,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libQSEEComAPI",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libQSEEComAPI.so",
+            ],
+            shared_libs: [
+                "libion",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libQSEEComAPI.so",
+            ],
+            shared_libs: [
+                "libion",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libVkLayer_q3dtools",
     owner: "zte",
     strip: {
@@ -1541,6 +1625,49 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libZEffectLib",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libZEffectLib.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libdl",
+                "libm",
+                "libz",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libZEffectLib.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libdl",
+                "libm",
+                "libz",
             ],
         },
     },
@@ -2176,6 +2303,53 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbitmlengine",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbitmlengine.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libcdsprpc",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbitmlengine.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libcdsprpc",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbt-hidlclient",
     owner: "zte",
     strip: {
@@ -2287,6 +2461,55 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_nn_stub",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcamera_nn_stub.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libcdsprpc",
+                "libqdMetaData",
+                "libhardware",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamera_nn_stub.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libcdsprpc",
+                "libqdMetaData",
+                "libhardware",
                 "libc",
                 "libm",
                 "libdl",
@@ -3092,7 +3315,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libcom.qti.chinodeutils",
                 "libskia_watermark",
-                "libskia",
+                "libskia_vendor",
                 "liblog",
                 "libc++",
                 "libc",
@@ -3109,7 +3332,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libcom.qti.chinodeutils",
                 "libskia_watermark",
-                "libskia",
+                "libskia_vendor",
                 "liblog",
                 "libc++",
                 "libc",
@@ -3374,6 +3597,88 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libchilog",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libchilog.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libchilog.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcom.qti.chinodeutils",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcom.qti.chinodeutils.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libchilog",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcom.qti.chinodeutils.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libchilog",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcomprcapture",
     owner: "zte",
     strip: {
@@ -3410,6 +3715,88 @@ cc_prebuilt_library_shared {
                 "libtinycompress",
                 "libaudioroute",
                 "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libconfigdb",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libconfigdb.so",
+            ],
+            shared_libs: [
+                "libxml",
+                "libdsutils",
+                "libdiag",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libconfigdb.so",
+            ],
+            shared_libs: [
+                "libxml",
+                "libdsutils",
+                "libdiag",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcpion",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcpion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcpion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
                 "libc++",
                 "libc",
                 "libm",
@@ -3813,6 +4200,49 @@ cc_prebuilt_library_shared {
                 "libOpenCL",
                 "libfastcvdsp_stub",
                 "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfnxml",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libfnxml.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfnxml.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libxml2",
                 "libc++",
                 "libc",
                 "libm",
@@ -4336,6 +4766,86 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libimage_segment",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libimage_segment.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libtensorflowlite",
+                "libtensorflowlite_gpu_delegate",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libimage_segment.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libtensorflowlite",
+                "libtensorflowlite_gpu_delegate",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libimage_split",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libimage_split.so",
+            ],
+            shared_libs: [
+                "libimage_segment",
+                "liblog",
+                "libtensorflowlite",
+                "libtensorflowlite_gpu_delegate",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libimage_split.so",
+            ],
+            shared_libs: [
+                "libimage_segment",
+                "liblog",
+                "libtensorflowlite",
+                "libtensorflowlite_gpu_delegate",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libkeymasterdeviceutils",
     owner: "zte",
     strip: {
@@ -4799,6 +5309,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libminksocket",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libminksocket.so",
+            ],
+            shared_libs: [
+                "libqrtr",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libminksocket.so",
+            ],
+            shared_libs: [
+                "libqrtr",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmm-color-convertor",
     owner: "zte",
     strip: {
@@ -4911,6 +5462,53 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnetmgr",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libnetmgr.so",
+            ],
+            shared_libs: [
+                "libdsutils",
+                "libconfigdb",
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnetmgr.so",
+            ],
+            shared_libs: [
+                "libdsutils",
+                "libconfigdb",
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnpu",
     owner: "zte",
     strip: {
@@ -4988,6 +5586,49 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libtrustedapploader",
                 "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libofflinelog",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libofflinelog.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libofflinelog.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
                 "libc++",
                 "libc",
                 "libm",
@@ -5198,6 +5839,96 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libportrait_bokeh",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libportrait_bokeh.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libimage_segment",
+                "libimage_split",
+                "libtensorflowlite",
+                "libtensorflowlite_gpu_delegate",
+                "libc",
+                "libdl",
+                "libm",
+                "libz",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libportrait_bokeh.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libimage_segment",
+                "libimage_split",
+                "libtensorflowlite",
+                "libtensorflowlite_gpu_delegate",
+                "libc",
+                "libdl",
+                "libm",
+                "libz",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcbor",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqcbor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqcbor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
                 "libcutils",
                 "libc++",
                 "libc",
@@ -6052,6 +6783,55 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqmi_legacy",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqmi_legacy.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libqmi_client_qmux",
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libidl",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_legacy.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libqmi_client_qmux",
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libidl",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqmiservices",
     owner: "zte",
     strip: {
@@ -6703,6 +7483,126 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsensorslog",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsensorslog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsensorslog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libskia_vendor",
+    stem: "libskia",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libskia.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libEGL",
+                "libGLESv2",
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libskia.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libEGL",
+                "libGLESv2",
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libskia_watermark",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libskia_watermark.so",
+            ],
+            shared_libs: [
+                "libskia_vendor",
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libGLESv3",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libskia_watermark.so",
+            ],
+            shared_libs: [
+                "libskia_vendor",
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libGLESv3",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsndmonitor",
     owner: "zte",
     strip: {
@@ -6739,6 +7639,53 @@ cc_prebuilt_library_shared {
                 "libtinycompress",
                 "libaudioroute",
                 "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnsapi",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsnsapi.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libcutils",
+                "libutils",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_encdec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsnsapi.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libcutils",
+                "libutils",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_encdec",
                 "libc++",
                 "libc",
                 "libm",
@@ -6923,6 +7870,80 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtensorflowlite",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtensorflowlite.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtensorflowlite.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtensorflowlite_gpu_delegate",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtensorflowlite_gpu_delegate.so",
+            ],
+            shared_libs: [
+                "libEGL",
+                "libGLESv3",
+                "liblog",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtensorflowlite_gpu_delegate.so",
+            ],
+            shared_libs: [
+                "libEGL",
+                "libGLESv3",
+                "liblog",
+                "libdl",
+                "libm",
+                "libc",
             ],
         },
     },
@@ -7281,6 +8302,121 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwa_widelens_undistort",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwa_widelens_undistort.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_widelens_undistort.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxml",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libxml.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdiag",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libxml.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdiag",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libzte_enhance",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libzte_enhance.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libOpenCL",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libzte_enhance.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libOpenCL",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -7923,6 +9059,94 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "vendor.qti.hardware.vpp@1.1",
                 "vendor.qti.hardware.vpp@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.memory.pasrmanager@1.0",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.memory.pasrmanager@1.1",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.memory.pasrmanager@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.memory.pasrmanager@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -11196,6 +12420,44 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qti.chi.override.bitra",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/com.qti.chi.override.bitra.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libcamera_metadata",
+                "libchilog",
+                "libhardware",
+                "libhidlbase",
+                "libqdMetaData",
+                "libutils",
+                "vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra",
+                "vendor.qti.hardware.vpp@1.1",
+                "vendor.qti.hardware.vpp@1.2",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.chi.override",
     owner: "zte",
     strip: {
@@ -11892,33 +13154,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libFNVfbEngineHAL",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libFNVfbEngineHAL.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libEGL",
-                "libnativewindow",
-                "libGLESv3",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libGPQTEEC_vendor",
     owner: "zte",
     strip: {
@@ -12062,34 +13297,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQSEEComAPI",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libQSEEComAPI.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQTEEConnector_vendor",
     owner: "zte",
     strip: {
@@ -12198,34 +13405,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libZEffectLib",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libZEffectLib.so",
-            ],
-            shared_libs: [
-                "libnativewindow",
-                "liblog",
-                "libEGL",
-                "libGLESv3",
-                "libc",
-                "libdl",
-                "libm",
-                "libz",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaoa",
     owner: "zte",
     strip: {
@@ -12250,7 +13429,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbitmlengine",
+    name: "libasn1cper",
     owner: "zte",
     strip: {
         none: true,
@@ -12258,15 +13437,60 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libbitmlengine.so",
+                "proprietary/vendor/lib64/libasn1cper.so",
             ],
             shared_libs: [
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "libcdsprpc",
-                "libz",
+                "libasn1crtx",
+                "libasn1crt",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libasn1crt",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libasn1crt.so",
+            ],
+            shared_libs: [
+                "libasn1crtx",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libasn1crtx",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libasn1crtx.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -12297,37 +13521,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "vendor.qti.hardware.cacert@1.0",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamera_nn_stub",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamera_nn_stub.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "libcdsprpc",
-                "libqdMetaData",
-                "libhardware",
                 "libc",
                 "libm",
                 "libdl",
@@ -12414,33 +13607,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libgps.utils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libchilog",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libchilog.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libsync",
                 "libc++",
                 "libc",
                 "libm",
@@ -12637,87 +13803,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcom.qti.chinodeutils",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcom.qti.chinodeutils.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libchilog",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libconfigdb",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libconfigdb.so",
-            ],
-            shared_libs: [
-                "libxml",
-                "libdsutils",
-                "libdiag",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcpion",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcpion.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
                 "libc++",
                 "libc",
                 "libm",
@@ -12972,34 +14057,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libQSEEComAPI",
                 "libtime_genoff",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfnxml",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfnxml.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libxml2",
                 "libc++",
                 "libc",
                 "libm",
@@ -13274,59 +14331,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libimage_segment",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libimage_segment.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libtensorflowlite",
-                "libtensorflowlite_gpu_delegate",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libimage_split",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libimage_split.so",
-            ],
-            shared_libs: [
-                "libimage_segment",
-                "liblog",
-                "libtensorflowlite",
-                "libtensorflowlite_gpu_delegate",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libipebpsstriping",
     owner: "zte",
     strip: {
@@ -13500,6 +14504,40 @@ cc_prebuilt_library_shared {
                 "libperfgluelayer",
                 "libperfconfig",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblmutils-ns",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblmutils-ns.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libnl",
+                "vendor.qti.hardware.servicetracker@1.0",
+                "vendor.qti.hardware.iop@2.0",
+                "vendor.qti.hardware.servicetracker@1.1",
+                "libhidlbase",
+                "libhidltransport",
+                "libsqlite",
+                "libutils",
+                "libqti-iopd",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
@@ -13781,33 +14819,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libminksocket",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libminksocket.so",
-            ],
-            shared_libs: [
-                "libqrtr",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_faceproc",
     owner: "zte",
     strip: {
@@ -13903,36 +14914,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnetmgr",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnetmgr.so",
-            ],
-            shared_libs: [
-                "libdsutils",
-                "libconfigdb",
-                "libdiag",
-                "libcutils",
-                "liblog",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -14093,34 +15074,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libofflinelog",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libofflinelog.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libops",
     owner: "zte",
     strip: {
@@ -14253,37 +15206,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libportrait_bokeh",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libportrait_bokeh.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libGLESv3",
-                "libEGL",
-                "libimage_segment",
-                "libimage_split",
-                "libtensorflowlite",
-                "libtensorflowlite_gpu_delegate",
-                "libc",
-                "libdl",
-                "libm",
-                "libz",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libpowercallback",
     owner: "zte",
     strip: {
@@ -14340,33 +15262,6 @@ cc_prebuilt_library_shared {
                 "libqti-perfd-client",
                 "vendor.display.config@1.0",
                 "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqcbor",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcbor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -15144,31 +16039,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsensorslog",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsensorslog.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsettings",
     owner: "zte",
     strip: {
@@ -15188,60 +16058,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libskia",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libskia.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libEGL",
-                "libGLESv2",
-                "liblog",
-                "libm",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libskia_watermark",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libskia_watermark.so",
-            ],
-            shared_libs: [
-                "libskia",
-                "liblog",
-                "libEGL",
-                "libGLESv2",
-                "libGLESv3",
-                "libm",
-                "libdl",
-                "libc",
             ],
         },
     },
@@ -15379,36 +16195,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsnsapi",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsnsapi.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libcutils",
-                "libutils",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
                 "libc++",
                 "libc",
                 "libm",
@@ -15614,56 +16400,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtensorflowlite",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtensorflowlite.so",
-            ],
-            shared_libs: [
-                "libm",
-                "liblog",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtensorflowlite_gpu_delegate",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtensorflowlite_gpu_delegate.so",
-            ],
-            shared_libs: [
-                "libEGL",
-                "libGLESv3",
-                "liblog",
-                "libdl",
-                "libm",
-                "libc",
             ],
         },
     },
@@ -15960,31 +16696,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwa_widelens_undistort",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwa_widelens_undistort.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwms",
     owner: "zte",
     strip: {
@@ -16098,33 +16809,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxml",
-    owner: "zte",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxml.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdiag",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libxtadapter",
     owner: "zte",
     strip: {
@@ -16153,7 +16837,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libzte_enhance",
+    name: "libxtwifi_server_protocol",
     owner: "zte",
     strip: {
         none: true,
@@ -16161,14 +16845,50 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libzte_enhance.so",
+                "proprietary/vendor/lib64/libxtwifi_server_protocol.so",
             ],
             shared_libs: [
+                "libcutils",
+                "libasn1cper",
+                "libasn1crt",
+                "libasn1crtx",
+                "libloc_core",
+                "libgps.utils",
                 "liblog",
-                "libOpenCL",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libxtwifi_server_protocol_uri_v3",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libxtwifi_server_protocol_uri_v3.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libgps.utils",
+                "libasn1cper",
+                "libasn1crt",
+                "libasn1crtx",
+                "libc++",
                 "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -17141,6 +17861,41 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra",
+    owner: "zte",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@3.0",
+                "libcamera_metadata",
+                "libhidlbase",
+                "libutils",
+                "vendor.qti.hardware.camera.postproc@1.0",
+                "libz",
                 "libc",
                 "libm",
                 "libdl",

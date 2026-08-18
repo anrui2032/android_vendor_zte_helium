@@ -407,6 +407,7 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
+    libFNVfbEngineHAL \
     libI420colorconvert \
     libOmxAacDec \
     libOmxAlacDec \
@@ -419,7 +420,9 @@ PRODUCT_PACKAGES += \
     libOmxVpp \
     libOmxWmaDec \
     libOpenCL \
+    libQSEEComAPI \
     libVkLayer_q3dtools \
+    libZEffectLib \
     liba2dpoffload \
     libacdb-fts \
     libacdbloader \
@@ -434,9 +437,11 @@ PRODUCT_PACKAGES += \
     libbase64 \
     libbatching \
     libbatterylistener \
+    libbitmlengine \
     libbt-hidlclient \
     libbtnv \
     libc2d30_bltlib \
+    libcamera_nn_stub \
     libcamxdefog \
     libcamxeffect \
     libcamxexternalformatutils \
@@ -460,7 +465,11 @@ PRODUCT_PACKAGES += \
     libcapiv2vop \
     libcdsp_default_listener \
     libcdsprpc \
+    libchilog \
+    libcom.qti.chinodeutils \
     libcomprcapture \
+    libconfigdb \
+    libcpion \
     libdiag \
     libdpmqmihal \
     libdsi_netctrl \
@@ -470,6 +479,7 @@ PRODUCT_PACKAGES += \
     libexthwplugin \
     libfastcvdsp_stub \
     libfastcvopt \
+    libfnxml \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
@@ -482,6 +492,8 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libidl \
+    libimage_segment \
+    libimage_split \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
@@ -493,16 +505,21 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libminkdescriptor \
+    libminksocket \
     libmm-color-convertor \
     libmmosal_vendor \
     libmulawdec \
+    libnetmgr \
     libnpu \
     liboemcrypto \
+    libofflinelog \
     libomx-dts \
     libpdmapper \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
+    libportrait_bokeh \
+    libqcbor \
     libqcci_legacy \
     libqcmaputils \
     libqcodec2_base \
@@ -521,6 +538,7 @@ PRODUCT_PACKAGES += \
     libqmi_csi \
     libqmi_csvt_srvc \
     libqmi_encdec \
+    libqmi_legacy \
     libqmiservices \
     libqrtr \
     libqsocket \
@@ -536,11 +554,17 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
+    libsensorslog \
+    libskia_vendor \
+    libskia_watermark \
     libsndmonitor \
+    libsnsapi \
     libspkrprot \
     libssrec \
     libstagefright_soft_qtiflacdec \
     libsysmon_cdsp_skel \
+    libtensorflowlite \
+    libtensorflowlite_gpu_delegate \
     libthermalclient \
     libtinycompress \
     libtrustedapploader \
@@ -549,6 +573,9 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvpplibrary \
     libvpptestutils \
+    libwa_widelens_undistort \
+    libxml \
+    libzte_enhance \
     libwvdrmengine \
     libasphere \
     libdtsaudio \
@@ -564,6 +591,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     libOmxDsdDec \
     libOmxVideoDSMode \
     libadm \
@@ -664,6 +693,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     deviceInfoServiceModule \
     camera.qcom \
+    com.qti.chi.override.bitra \
     com.qti.chi.override \
     fingerprint.lito \
     vendor.qti.esepowermanager@1.1-impl \
@@ -684,35 +714,29 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     lib-siputility \
     lib-uceservice \
-    libFNVfbEngineHAL \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libMpeg4SwEncoder \
-    libQSEEComAPI \
     libQTEEConnector_vendor \
     libSEC.HybridHDR \
     libSecureUILib \
     libStDrvInt \
-    libZEffectLib \
     libaoa \
-    libbitmlengine \
+    libasn1cper \
+    libasn1crt \
+    libasn1crtx \
     libcacertclient \
-    libcamera_nn_stub \
     libcamerapostproc \
     libcdfw \
     libcdfw_remote_api \
-    libchilog \
     libchvs-bc \
     libchvs-util \
     libcne \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libcom.qti.chinodeutils \
-    libconfigdb \
-    libcpion \
     libcvp_common \
     libcvpcpuRev_skel \
     libdataitems \
@@ -722,7 +746,6 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libfnxml \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
@@ -731,14 +754,13 @@ PRODUCT_PACKAGES += \
     libhdr_tm \
     libhexagon_nn_stub \
     libhta_hexagon_runtime \
-    libimage_segment \
-    libimage_split \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
     libjnihelper \
     liblbs_core \
     liblearningmodule \
+    liblmutils-ns \
     libloc_api_v02 \
     libloc_socket \
     liblocationservice \
@@ -748,27 +770,22 @@ PRODUCT_PACKAGES += \
     liblqe \
     libmeters-ns \
     libmeters \
-    libminksocket \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmodemapi_vendor \
     libmpbase \
-    libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libnlnetmgr \
     liboemaids_vendor \
-    libofflinelog \
     libops \
     libos \
     libpdnotifier \
     libperipheral_client \
     libpn553_fw \
-    libportrait_bokeh \
     libpowercallback \
     libpowercore \
-    libqcbor \
     libqcc_file_agent \
     libqcrilFramework \
     libqcrildatactl \
@@ -793,16 +810,12 @@ PRODUCT_PACKAGES += \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
-    libsensorslog \
     libsettings \
-    libskia \
-    libskia_watermark \
     libslimclient \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
     libsns_registry_skel \
-    libsnsapi \
     libsnsdiaglog \
     libssc \
     libssc_default_listener \
@@ -810,8 +823,6 @@ PRODUCT_PACKAGES += \
     libswregistrationalgo \
     libsystem_health_mon \
     libteec \
-    libtensorflowlite \
-    libtensorflowlite_gpu_delegate \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
@@ -823,13 +834,12 @@ PRODUCT_PACKAGES += \
     libwa_dualcam_ancbase \
     libwa_refocus \
     libwa_rtdof \
-    libwa_widelens_undistort \
     libwms \
     libwqe \
     libwvhidl \
-    libxml \
     libxtadapter \
-    libzte_enhance \
+    libxtwifi_server_protocol \
+    libxtwifi_server_protocol_uri_v3 \
     qcrild_librilutils \
     qtibus \
     qtimutex \
@@ -861,6 +871,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
