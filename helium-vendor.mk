@@ -168,7 +168,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
-    vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     vendor/zte/helium/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
@@ -718,21 +717,17 @@ PRODUCT_PACKAGES += \
     libcvpcpuRev_skel \
     libdataitems \
     libdisp-aba \
-    libdisplaydebug \
     libdisplayqos \
     libdisplayskuutils \
     libdpps \
-    libdrm \
     libdrmfs \
     libdrmtime \
-    libdrmutils \
     libfnxml \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
     libgf_hal \
     libgnsspps \
-    libgpu_tonemapper \
     libhdr_tm \
     libhexagon_nn_stub \
     libhta_hexagon_runtime \
@@ -778,10 +773,8 @@ PRODUCT_PACKAGES += \
     libqcrilFramework \
     libqcrildatactl \
     libqdma_file_agent \
-    libqdutils \
     libqisl \
     libqseed3 \
-    libqservice \
     libqti-iopd-client \
     libqti-iopd \
     librcc \
@@ -792,14 +785,11 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
     libsdm-disp-vndapis \
-    libsdmcore \
     libsdmextension \
-    libsdmutils \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
@@ -981,7 +971,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
-    vendor.qti.hardware.display.composer-service.xml \
     adpl \
     adsprpcd \
     camerahalvs \
@@ -1003,7 +992,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.qseecom@1.0-service \
