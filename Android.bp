@@ -4834,7 +4834,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmosal",
+    name: "libmmosal_vendor",
+    stem: "libmmosal",
     owner: "zte",
     strip: {
         none: true,
@@ -7978,7 +7979,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libmmosal",
+                "libmmosal_vendor",
                 "libutils",
                 "libOmxCore",
                 "libwfdcommonutils_proprietary",
@@ -14503,7 +14504,7 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "libhidlbase",
                 "vendor.qti.hardware.qccsyshal@1.0",
-                "libmmosal",
+                "libmmosal_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -14589,7 +14590,7 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "libhidlbase",
                 "vendor.qti.hardware.qccsyshal@1.0",
-                "libmmosal",
+                "libmmosal_vendor",
                 "libc++",
                 "libc",
                 "libm",

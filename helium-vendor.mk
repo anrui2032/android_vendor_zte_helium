@@ -495,7 +495,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libmm-color-convertor \
-    libmmosal \
+    libmmosal_vendor \
     libmulawdec \
     libnpu \
     liboemcrypto \
